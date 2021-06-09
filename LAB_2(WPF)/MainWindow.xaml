@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAB_2_WPF_"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="600">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Column="1" Header="f(x)" Height="200" Width="150" FontSize="18" >
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center" Height="120" Width="90" >
+                <RadioButton Content="sin(x)" Margin="10 10" ></RadioButton>
+                <RadioButton Content="cos(x)" Margin="10 10"></RadioButton>
+                <RadioButton Content="tg(x)" Margin="10 10"></RadioButton>
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Button" HorizontalAlignment="Center"  Grid.Row="1" Height="30" Width="100"  VerticalAlignment="Center" />
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="40,40,100,60" FontSize="18" Background="LightGray"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Height="18" Width="100" Margin="10 10"></TextBlock>
+            <TextBlock Height="18" Width="100" Margin="10 10"></TextBlock>
+            <TextBlock Height="18" Width="100" Margin="10 10"></TextBlock>
+        </StackPanel>
 
     </Grid>
 </Window>
