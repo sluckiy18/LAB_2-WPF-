@@ -24,7 +24,7 @@
             </StackPanel>
         </GroupBox>
         <Button Content="Button"  Grid.Row="1" Height="56"  VerticalAlignment="Center" FontSize="18" Margin="53,0,110,0" Click="Button_Click"  />
-        <TextBlock Name="tbl" Grid.Row="1" Grid.ColumnSpan="3" Margin="253,40,46,48" FontSize="18" Background="LightGray"/>
+        <Label Name="lbl" Grid.Row="1" Grid.ColumnSpan="3" Margin="253,40,46,48" FontSize="18" Background="LightGray"/>
         <StackPanel>
             <Grid Height="217">
                 <Grid.ColumnDefinitions>

@@ -77,15 +77,19 @@ namespace LAB_2_WPF_
                 str = "значение не определено";
             }
 
-           // tbl.Text = str.ToString();
+           
 
             list.Add(result);
 
             double a = list.Max();
             double b = list.Min();
-            tbl.Text = a.ToString();
-            tbl.Text = b.ToString();
 
+            lbl.Content = result.ToString() + '\n';
+            lbl.Content += str;
+            if (cbMax.IsChecked == true)
+            { lbl.Content += $"\n max={a:0.#####}"; }
+            if (cbMin.IsChecked == true)
+            { lbl.Content += $"\nmin={b:0.#####}"; }
 
 
         }
