@@ -19,10 +19,78 @@ namespace LAB_2_WPF_
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
+
     {
+       List<double>list = new List<double>();
+
+        Func<double, double> rb;
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void rbSin_Checked(object sender, RoutedEventArgs e)
+        {
+            rb = Math.Sin;
+        }
+
+        private void rbCos_Checked(object sender, RoutedEventArgs e)
+        {
+            rb = Math.Cos;
+        }
+
+        private void rbTg_Checked(object sender, RoutedEventArgs e)
+        {
+            rb = Math.Tan;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+   
+            string str;
+            double result = 0;
+            double x = Convert.ToDouble(tb1.Text);
+            double fx = rb(x);
+            double m = Convert.ToDouble(tb2.Text);
+
+            
+
+            if (m > -1 & m < x)
+            {
+                str = "Ветвь 1: -1<m<х";
+                result = Math.Sin(5 * fx + 3 * m * Math.Abs(fx));
+            }
+
+            else if (x < m)
+            {
+                str = "Ветвь 2: х<m";
+                result = Math.Cos(3 * fx + 5 * m * Math.Abs(fx));
+            }
+
+            else if (x == m)
+            {
+                str = "Ветвь 3: х=m";
+                result = Math.Pow((fx + m), 2);
+            }
+            else
+            {
+                str = "значение не определено";
+            }
+
+           // tbl.Text = str.ToString();
+
+            list.Add(result);
+
+            double a = list.Max();
+            double b = list.Min();
+            tbl.Text = a.ToString();
+            tbl.Text = b.ToString();
+
+
+
+        }
+            
+       
+        
     }
 }
