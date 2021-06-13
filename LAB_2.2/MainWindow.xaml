@@ -31,7 +31,7 @@
         <Button Grid.Column="1" Grid.Row="3" Content="5" Click="Button_Click" />
         <Button Grid.Column="2" Grid.Row="3" Content="6" Click="Button_Click" />
         <Button Grid.Column="3" Grid.Row="3" Content="-" Click="Button_Click_2" />
-        <Button Grid.Column="0" Grid.Row="2" Content="7"Click="Button_Click"/>
+        <Button Grid.Column="0" Grid.Row="2" Content="7" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="2" Content="8" Click="Button_Click" />
         <Button Grid.Column="2" Grid.Row="2" Content="9" Click="Button_Click" />
         <Button Grid.Column="3" Grid.Row="2" Content="+" Click="Button_Click_2" />
@@ -39,7 +39,7 @@
         <Button Grid.Column="1" Grid.Row="1" Content=" &lt;-" Click="Button_Click_5" />
         <Button Grid.Column="2" Grid.Row="1" Content="*" Click="Button_Click_2" />
         <Button Grid.Column="3" Grid.Row="1" Content="/" Click="Button_Click_2" />
-        <TextBox Name="tb"   Grid.Row="0" Grid.ColumnSpan="4" HorizontalContentAlignment="Right" Padding="10 0"
+        <TextBox Name="tb"   Grid.Row="0" Grid.ColumnSpan="4" HorizontalContentAlignment="Right" Padding="10 0" 
                  FontSize="24" VerticalContentAlignment="Center" >0</TextBox>
 
 
